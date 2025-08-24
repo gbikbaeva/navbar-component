@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,37 +11,70 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
-      If you're not using Tailwind, you may delete the <script> -->
-    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <link rel="icon" href="img/favicon.ico" sizes="any" />
-    <style>
-      /* You may write styles inside this <style> tag or within `css/style.css`. */
-    </style>
   </head>
   <body>
-    <!-- Add your site or application content here -->
-    <h1 class="text-5xl text-center font-semibold pt-20">
-      Hello world! Write your content here.
-    </h1>
+    <header class="navbar">
+      <div class="navbar__logo">
+        <img src="img/abstractly.svg" alt="logo" />
+      </div>
+      <div class="navbar__content">
+        <div class="navbar__content__links">
+          <a href="#" class="link">Home</a>
+          <a href="#" class="link">Features</a>
+          <a href="#" class="link">Pricing</a>
+          <a href="#" class="link">About us</a>
+          <a href="#" class="link">Contact</a>
+        </div>
+        <div class="navbar__content__actions">
+          <button class="button button--secondary button--size-lg button--learn">Learn more</button>
+          <button class="button button--primary button--size-lg button--pricing">See pricing</button>
+        </div>
+      </div>
+      <button id="menu-btn" type="button" class="navbar__btn--open" aria-label="Open menu">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M2.5 3.33333H17.5V5H2.5V3.33333ZM2.5 9.16667H17.5V10.8333H2.5V9.16667ZM2.5 15H17.5V16.6667H2.5V15Z"
+            fill="#525252" />
+        </svg>
+      </button>
+    </header>
+    <nav id="menu">
+      <div class="menu__header">
+        <div class="menu__header__logo">
+          <img src="img/abstractly.svg" alt="logo" />
+        </div>
+        <button id="menu-close-btn" type="button" class="navbar__btn--close" aria-label="Close menu">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10.0006 8.82208L14.1253 4.69727L15.3038 5.87577L11.1791 10.0006L15.3038 14.1253L14.1253 15.3038L10.0006 11.1791L5.87577 15.3038L4.69727 14.1253L8.82208 10.0006L4.69727 5.87577L5.87577 4.69727L10.0006 8.82208Z"
+              fill="#525252" />
+          </svg>
+        </button>
+      </div>
+      <div class="menu__links">
+        <a href="#" class="link link--nav">Home</a>
+        <a href="#" class="link link--nav">Features</a>
+        <a href="#" class="link link--nav">Pricing</a>
+        <a href="#" class="link link--nav">About us</a>
+        <a href="#" class="link link--nav">Contact</a>
+      </div>
+      <div class="menu__actions">
+        <button class="button button--secondary button--size-lg button--learn">Learn more</button>
+        <button class="button button--primary button--size-lg button--pricing">See pricing</button>
+      </div>
+    </nav>
 
-    <!-- Attribute this challenge to yourself! -->
-    <div class="credits" data-gfe-screenshot-exclude="true">
-      A challenge by
-      <a
-        href="https://www.greatfrontend.com/projects?ref=challenges"
-        target="_blank"
-        >GreatFrontEnd Projects</a
-      >. Built by
-      <a
-        href="https://www.greatfrontend.com/projects/u/username"
-        target="_blank"
-        >Your Name</a
-      >.
-    </div>
     <script src="js/index.js"></script>
   </body>
 </html>

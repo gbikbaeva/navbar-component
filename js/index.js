@@ -1,2 +1,7 @@
-// Write custom JavaScript here.
-// You may ignore this file and delete if if JavaScript is not required for your challenge.
+document.getElementById('menu-btn').addEventListener('click', function() {
+  document.getElementById('menu').classList.toggle('open');
+});
+
+document.getElementById('menu-close-btn').addEventListener('click', function() {
+  document.getElementById('menu').classList.toggle('open');
+});
